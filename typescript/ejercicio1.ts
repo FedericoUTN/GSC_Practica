@@ -24,3 +24,31 @@ let esPablo: boolean = true;        //asigno true para darle un valor
 
 console.log('[Ejercicio 1.3]', `${esPablo ? 'Oh, hola Pablo' : 'Quien sos vos?'}`);
 
+//1.4
+
+let entero : number = 6;
+const decimal : number= 6.66;
+const hexadecimal : number= 0xf00d;
+const binario : number = 0b1010011010;
+
+const octal : number = 0o744;
+const ceroNegativo : number = -0;
+const enRealiadadNumero :number = NaN;
+const mayorNumero : number = Number.MAX_VALUE;
+const elNumeroMasGrande : number = Infinity;
+
+ let miembros: number[] = [
+ entero,
+ decimal,
+ hexadecimal,
+ binario,
+ octal,
+ ceroNegativo,
+ enRealiadadNumero,
+ mayorNumero,
+ elNumeroMasGrande
+];
+
+ miembros[0] = Number('12345');
+
+ console.log('[Ejercicio 1.4]', miembros);
