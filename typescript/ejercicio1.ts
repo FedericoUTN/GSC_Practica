@@ -16,3 +16,11 @@ torta.ingrediente = 'arandanos';        //torta es del tipo any, creo tipo torta
 //torta.otro_ingrediente = 'chocolate';             //tipo mal ingresado
 
 console.log('[Ejercicio 1.2]', `Me gusta comer torta con sabor a ${torta.ingrediente}.`);
+
+//1.3
+
+let esPablo: boolean = true;        //asigno true para darle un valor
+
+
+console.log('[Ejercicio 1.3]', `${esPablo ? 'Oh, hola Pablo' : 'Quien sos vos?'}`);
+
