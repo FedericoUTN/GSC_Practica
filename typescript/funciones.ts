@@ -55,3 +55,40 @@ function computeScore(word : string) : number {
     }
     
     console.log('[Ejercicio 3.3]', `zoologico vale ${computeScore('zoo')} puntos.`);
+    
+//4
+    
+function greet(greeting? : string) : string {
+    if(greeting){
+        return greeting.toUpperCase();
+    }
+    else return "hola"
+}
+const defaultGreeting = greet();
+const portugueseGreeting = greet('Oi como vai!');
+
+console.log('[Ejercicio 3.4]', defaultGreeting, portugueseGreeting);
+
+//5
+function layEggs(quantity : number = 0 , color : string = "blanco") : void {
+    console.log(
+    `[Ejercicio 3.5] Acabas de poner ${quantity} huevos ${color}. Buen trabajo!`);
+}
+layEggs();
+
+//6
+
+let multiply: (val1: number, val2: number) => number;
+let capitalize: (val: string) => string;
+
+capitalize = function (value: string): string {
+return `${value.charAt(0).toUpperCase()}${value.slice(1)}`;
+}
+7
+multiply = function (x: number, y: number): number {
+return x * y;
+}
+
+console.log('[Ejercicio 3.6]', capitalize(`habil ${multiply(5, 10)}`));
+
+//7
