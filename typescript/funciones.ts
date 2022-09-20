@@ -1,3 +1,4 @@
+
 //1
 /*
 function add(x :number, y: number) {
@@ -84,7 +85,7 @@ let capitalize: (val: string) => string;
 capitalize = function (value: string): string {
 return `${value.charAt(0).toUpperCase()}${value.slice(1)}`;
 }
-7
+
 multiply = function (x: number, y: number): number {
 return x * y;
 }
@@ -92,3 +93,26 @@ return x * y;
 console.log('[Ejercicio 3.6]', capitalize(`habil ${multiply(5, 10)}`));
 
 //7
+const booleanCollection: boolean[] = [];
+const numberCollection: number[] = [];
+const stringCollection: (string | [])[] = [];
+
+function pushToCollection<T>(item : T, collection : T[]) {
+    
+collection.push(item);
+return collection;
+}
+
+// Anadir algunas cosas a las colecciones
+pushToCollection(false, booleanCollection);
+pushToCollection('hi', stringCollection);
+pushToCollection([], stringCollection);
+
+pushToCollection(1, numberCollection);
+pushToCollection(2, numberCollection);
+
+pushToCollection(3, numberCollection);
+
+const incrementedByTwo: number[] = numberCollection.map((num: number) => num + 2);
+
+console.log('[Ejercicio 3.7]', `[${incrementedByTwo}] debe ser igual a [3,4,5]`);
